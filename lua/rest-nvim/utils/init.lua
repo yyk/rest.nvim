@@ -52,6 +52,8 @@ M.read_env_file = function()
 
   -- Directories to search for env files
   local env_file_paths = {
+    -- absolut path
+    env_file,
     -- current working directory
     vim.fn.getcwd() .. env_file,
     -- directory of the currently opened file
